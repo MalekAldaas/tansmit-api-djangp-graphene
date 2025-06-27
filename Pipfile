@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 django = "*"
 graphene-django = "*"
+pyjwt = "*"
+djangorestframework = "*"
+djoser = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

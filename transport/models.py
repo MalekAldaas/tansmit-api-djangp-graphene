@@ -1,12 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth import get_user_model
 
-
-
-class CustomUser(AbstractUser):
-    email = models.EmailField(blank=False, max_length=255, verbose_name='email')
-    USERNAME_FIELD = "username"
-    EMAIL_FIELD = 'email'
+CustomUser = get_user_model()
 
 class City(models.Model):
     name = models.CharField(max_length=100, unique=True)
