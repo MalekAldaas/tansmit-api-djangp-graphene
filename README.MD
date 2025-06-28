@@ -35,8 +35,6 @@ The system uses GraphQL to enable flexible and efficient querying and mutations,
 - Python 3.11+
 - Django 4.x
 - Graphene-Django (GraphQL for Django)
-- PostgreSQL (recommended)
-- Docker (optional for containerization)
 
 ---
 
