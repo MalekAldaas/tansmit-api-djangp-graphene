@@ -74,7 +74,6 @@ class ChangeUserGroupSerializer(serializers.Serializer):
 
     def save(self, **kwargs):
         user = self.validated_data['user']
-        # Clear all groups and assign the new one
         user.groups.clear()
         group, _ = Group.objects.get_or_create(name=self.validated_data['new_group'])
         user.groups.add(group)

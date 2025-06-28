@@ -8,7 +8,7 @@ User = get_user_model()
 class UserType(DjangoObjectType):
     class Meta:
         model = User
-        fields = ("id", "username", "email")  # expose as needed
+        fields = ("id", "username", "email")
 
 class CityType(DjangoObjectType):
     class Meta:
